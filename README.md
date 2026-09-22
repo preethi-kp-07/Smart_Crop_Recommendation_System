@@ -82,7 +82,7 @@ smartcrop-ai/
 
 - **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, Recharts, Lucide React icons.
 - **Backend**: Python 3.11, FastAPI, Uvicorn, Pydantic.
-- **Machine Learning & Data**: Scikit-Learn, Pandas, NumPy, Joblib, SciPy, PySpark (optional batch analytics script).
+- **Machine Learning & Data**: Scikit-Learn, Pandas, NumPy, Joblib, SciPy.
 
 ---
 
