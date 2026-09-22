@@ -1,0 +1,21 @@
+services:
+  # Backend Web Service (FastAPI)
+  - type: web
+    name: smartcrop-ai-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt && python -m backend.ml.train
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+
+  # Frontend Static Site (Vite React)
+  - type: web
+    name: smartcrop-ai-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
