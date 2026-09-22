@@ -114,16 +114,6 @@ Evaluation performed on 20% stratified test split (440 holdout samples):
 ---
 
 
-
-## 📌 Distributed Big Data Analytics Note
-
-For production deployments with >10M telemetry records, batch aggregations can be scaled using PySpark:
-```bash
-python -m backend.ml.optional_pyspark_analytics
-```
-
----
-
 ## 🔒 Limitations & Future Enhancements
 
 1. **Weather Integration**: Integrates user micro-climate inputs; real-time OpenWeatherMap API key integration can be plugged into `backend/app/routes/predict.py`.
