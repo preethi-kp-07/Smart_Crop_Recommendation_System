@@ -113,52 +113,7 @@ Evaluation performed on 20% stratified test split (440 holdout samples):
 
 ---
 
-## 💻 Quick Start & Running Instructions
 
-### 1. Backend Setup & Run
-
-```bash
-# Navigate to project root
-cd e:\Crop_Recommedation
-
-# Activate Python virtual environment
-backend\venv\Scripts\activate
-
-# Train ML models (if retraining needed)
-python -m backend.ml.train
-
-# Start FastAPI server
-python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
-```
-- API Swagger Documentation: `http://127.0.0.1:8000/docs`
-
-### 2. Frontend Setup & Run
-
-```bash
-# Navigate to frontend folder
-cd e:\Crop_Recommedation\frontend
-
-# Install node dependencies
-npm install
-
-# Launch Vite development server
-npm run dev
-```
-- Open application interface in browser: `http://localhost:3000`
-
----
-
-## 💡 Hackathon Presentation Flow
-
-1. Open `http://localhost:3000` to view the **AgriTech Landing Page**.
-2. Click **Analyze My Field** or choose a **1-Click Preset Scenario** (e.g., *Wetland Paddy*, *Semi-Arid Chickpea*, *Cotton Belt*, *Coffee Plantation*, or *Apple Orchard*).
-3. Click **Analyze Field** to observe the smooth multi-step analysis progression.
-4. Review the **Recommended Crop**, **Prediction Confidence %**, **Alternative Crops Ranking Chart**, **Dynamic Explanations**, and **Field Advisory**.
-5. Navigate to **Dashboard** and **Analytics** to explore interactive Recharts visualizations.
-6. Open **Model Insights** to view the **Multiclass Confusion Matrix Heatmap** and candidate model F1-score comparison table.
-7. Inspect **History** to verify past predictions stored in local browser session.
-
----
 
 ## 📌 Distributed Big Data Analytics Note
 
