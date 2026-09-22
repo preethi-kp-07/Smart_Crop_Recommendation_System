@@ -28,7 +28,7 @@ SmartCrop AI is a complete, data-driven precision agriculture web application. I
 
 ---
 
-## 🏗️ Project Architecture
+##  Project Architecture
 
 ```
 smartcrop-ai/
